@@ -54,7 +54,16 @@
 		<section class="hero">
 			<div class="hero-overlay">
 				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-				<button type="button" class="button">Замовити послугу</button>
+				<button type="button" class="button" data-modal-open>Замовити послугу</button>
+			</div>
+			<div class="backdrop is-hidden" data-modal>
+				<div class="modal">
+					<button class="button-modal" data-modal-close><svg viewBox="0 0 100 100" width="11"
+							class="cross-icon">
+							<use href="./images/icons.svg#icon-cross">
+							</use>
+						</svg></button>
+				</div>
 			</div>
 		</section>
 		<!-- Skills section -->
@@ -116,13 +125,16 @@
 				<ul class="activity-list list">
 					<li class="activity-item">
 						<img src="./images/img-1.jpg" alt="hands typing on a keyboard" width="370" height="294" />
+						<p class="activity-descr">Десктопні додатки</p>
 					</li>
 					<li class="activity-item">
 						<img src="./images/img-2.jpg" alt="phone in the hands of a person working on a laptop"
 							width="370" height="294" />
+						<p class="activity-descr">Мобільні додатки</p>
 					</li>
 					<li class="activity-item">
 						<img src="./images/img-3.jpg" alt="graphics tablet in hand" width="370" height="294" />
+						<p class="activity-descr">Дизайнерські рішення</p>
 					</li>
 				</ul>
 			</div>
@@ -307,7 +319,7 @@
 			<div class="container">
 				<h2 class="clients-title title">Постійні клієнти</h2>
 				<ul class="clients-list list">
-					<li class="client-item"> 
+					<li class="client-item">
 						<a class="client-link link" href="">
 							<svg viewBox="0 0 57 32" width="106" height="60" class="client-icon">
 								<use href="./images/icons.svg#icon-logo-client-1">
@@ -368,7 +380,8 @@
 					<ul class="contacts-list list">
 						<li class="contacts-list-item">
 							<a href="https://goo.gl/maps/rsSfPPhpKUcSgdgL8" target="_blank"
-								rel="noopener noreferrer nofollow" class="contacts-item link">м. Київ, пр-т Лесі Українки,
+								rel="noopener noreferrer nofollow" class="contacts-item link">м. Київ, пр-т Лесі
+								Українки,
 								26
 							</a>
 						</li>
@@ -377,7 +390,8 @@
 								class="contacts-item link">info@devstudio.com
 							</a>
 						</li>
-						<li class="contacts-list-item"><a href="tel:+380961111111" class="contacts-item link">+38 096 111 11
+						<li class="contacts-list-item"><a href="tel:+380961111111" class="contacts-item link">+38 096
+								111 11
 								11</a></li>
 					</ul>
 				</address>
@@ -421,6 +435,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
