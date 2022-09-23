@@ -675,6 +675,7 @@ a {
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-link:hover .portfolio-descr {
+.projects-link:hover .portfolio-descr,
+.projects-link:focus .portfolio-descr {
 	transform: translateY(0);
 }
